@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ingrese el texto aquí</h1>
+    </header>
+    <main>
+        <textarea id="textInput" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="warning">
+            <span class="icon">!</span> Solo letras minúsculas y sin acentos
+        </div>
+        <div class="buttons">
+            <button onclick="encrypt()">Encriptar</button>
+            <button onclick="decrypt()">Desencriptar</button>
+        </div>
+        <div id="outputMessage">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button id="copyButton" onclick="copyToClipboard()" style="display: none;">Copiar</button>
+    </main>
+    <footer>
+        <p>Desarrollado por <a href="https://www.linkedin.com/in/ariel-nicosia" target="_blank">Ariel Nicosia</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
